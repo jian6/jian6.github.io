@@ -8,12 +8,11 @@ var contactInfo = {
   "location": "Ottawa, Ontario, Canada"
 };
 var skills = [
-           "Experience with Java, including Java SE, JavaFX, Swing, Junit, Jsoup",
+           "Experience with Java, including Java SE, JavaFX, Swing, Jsoup",
            "Experience with client side programming in HTML, CSS and Javascript",
-           "Experience with server side programming in PHP, Python and Node.js",
+           "Experience with server side programming in Python, PHP and Node.js",
            "Experience with software engineering practices, such as data structures and design patterns",
-           "Experience with testing methods, including automated testing in Selenium",
-           "Knowledge of container management tools, such as Docker"
+           "Experience with testing methods, such as unit testing, blackbox testing etc.",
 
 ]
 
@@ -23,8 +22,8 @@ var bio = {
   "name": "Jian Liu",
   "role": "Passionate Coder / Programming Student ",
   "contacts": contactInfo,
-  "picture": "images/fry.jpg",
-  "welcomeMsg": "Welcome to My Resume Page",
+  "picture": "images/me.jpg",
+  "welcomeMsg": "Hardworking, Reliable, Efficient Learner",
   "skills": skills
 };
 
@@ -32,27 +31,41 @@ var work = {
   "jobs":
   [
     {"position": "Web Developer",
-    "employer": "IBZ China",
-    "years": "2014",
+    "employer": "IBZ China (Chengdu)",
+    "years": "Aug, 2014 - Jan, 2015",
     "location": "Work in Distance",
-    "description": "IBZ is the official language training center of the University of Duisburg-Essen. I participated in the "+
-                  "development of the website of one of their branches in China using HTML, CSS and Javascript. I was also " +
+    "description": "IBZ is the official language training center of the University of Duisburg-Essen.<br>I participated in the "+
+                  "development of the website of one of their branches in China using HTML, CSS and Javascript.<br>I was also " +
                   "in charge of updating and maintaining the contents of the website."
+    },
+    {"position": "Software Developer",
+    "employer": "IBZ China (Chengdu)",
+    "years": "Jun, 2014",
+    "location": "Chengdu, China",
+    "description": "Developed a courier-tracking system for the school’s administration, using node.js, express.js and mongodb.<br>"+
+                   "Implemented a secured API for show/create/edit of package infomation using express.js.<br>"+
+                   "Implemented the server-side routing and middleware using express.js and http request.<br>"+
+                   "Implemented data persistence using Mongodb and its ODM mongoose.<br>"+
+                   "Parsed JSON from an external courier status API."
     },
     {"position": "Business Development Associate",
     "employer": "Leno Media Group",
-    "years": "2010-2012",
+    "years": "Jun, 2010 - Jan, 2012",
     "location": "Chengdu, China",
     "description": "I was responsible for client relations and new business opportunities explorations. I also wrote marketing plans "+
-                   "for the new opportunites. Furthermore, I planned and oversaw events and conferences for our clients."
+                   "for the new opportunites. Furthermore, I planned and oversaw events and conferences for our clients.<br>"+
+                   "Collaborated with 2 other team members to complete several large-scale events from scratch,<br> "+
+                   "which generated several million Chinese Yuan’s profits."
+
     },
     {"position": "eCommerce Specialist",
     "employer": "Crystal Techonology",
-    "years": "2007-2010",
+    "years": "Sep, 2007 - Apr, 2010",
     "location": "Chengdu, China",
-    "description": "I was in charge of the company's e-business affairs, including maintainance of the sales website, communite with "+
-                   "foreign clients as well as attract new clients on our e-commerce platforms. I also work with Web developers to ensure "+
-                   "our sales platform are user friendly and comply with company's requirements."
+    "description": "Managed the company’s e-commerce affairs, including customizing the sales platform using HTML and CSS, "+
+                   "its maintenance and update, and boosting company’s internet presence in order to attract new customers.<br>"+
+                   "Analyzed the company’s requirement for sales platform, and worked with developers from Alibaba to implement it.<br>"+
+                   "Successfully attracted several overseas clients by using the newly designed sales platform."
     }
   ]
 };
@@ -61,7 +74,7 @@ var education = {
   [
     {"school": "Algonquin College",
     "degree": "Diploma",
-    "major": "Computer Programmers, CO-OP",
+    "major": "Computer Programmer, CO-OP",
     "years": "Sep. 2015 - Present",
     "url": "http://www.algonquincollege.ca",
     "location": "Ottawa, Ontario, Canada"
@@ -78,16 +91,31 @@ var education = {
 var project = {
   "projects":
   [
-    {"title": "A small board game ",
-     "dates": "XXXX1",
-     "description": "XXXX1" ,
-     "image":["images/fry.jpg"]
+    {"title": "Microblog Application",
+     "dates": "2015",
+     "description": "Written in Python with FLASK and SQLAlchemy.<br>"+
+                    "Developed the backend of the application using Python and its Flask framework.<br>"+
+                    "Developed the frontend of the application using HTML, Bootstrap, Javascript.<br>"+
+                    "Implemented the database using ORM (SQLAlchemy) and SQLite.<br>"+
+                    "Implemented the functionalities of user authentication, login/logout, internationalization, and etc." ,
+     "image":["images/bloghome.png", "images/bloglogin.png", "images/profile.png", "images/edit.png"]
     },
-    {"title": "XXXX2",
-     "dates": "XXXX2",
-     "description": "XXXX2" ,
-     "image": ["images/fry.jpg"]
-    }
+    {"title": "Restaurant Information Restful API",
+     "dates": "2015",
+     "description": "Written in Python, using Foursquare API, GoogleMap API.<br>"+
+                    "Built a Restful API in Python that searches restaurants information based on given location and restaurant type.<br>"+
+                    "Parsed JSON result from GoogleMap API and foursquare API.<br>"+
+                    "Implemented Restful functionalities for GET/POST/PUT/DELETE using Flask framework." ,
+     "image": []
+     },
+     {"title": "Restaurant Homepage",
+      "dates": "2015",
+      "description": "Written in HTML and PHP. Database: MYSQL. <br>"+
+                     "Developed the feature of customer registrations by using their names, emails and etc.<br>"+
+                     "Developed the login function by verify username and password from database.<br>"+
+                     "Implemented database to store customer information and administrator information." ,
+      "image": ["images/home.png", "images/contact.png", "images/login.png", "images/list.png"]
+     }
   ]
 };
 
@@ -183,16 +211,16 @@ project.display=function() {
       var formmttedProTit = HTMLprojectTitle.replace("%data%", project.projects[item].title);
       var formmatedProDates = HTMLprojectDates.replace("%data%", project.projects[item].dates);
       var formmattedProDes = HTMLprojectDescription.replace("%data%", project.projects[item].description);
-      if (project.projects[item].image.length > 0){
-        for (pic in project.projects[item].image ){
-            var formmattedProPic =  HTMLprojectImage.replace("%data%", project.projects[item].image[pic]);
-        }
-      }
       $("#projects").append(HTMLprojectStart);
       $(".project-entry:last").append(formmttedProTit);
       $(".project-entry:last").append(formmatedProDates);
       $(".project-entry:last").append(formmattedProDes);
-      $(".project-entry:last").append(formmattedProPic);
+      if (project.projects[item].image.length > 0){
+        for (pic in project.projects[item].image ){
+            var formmattedProPic =  HTMLprojectImage.replace("%data%", project.projects[item].image[pic]);
+            $(".project-entry:last").append(formmattedProPic);
+        }
+      }
   };
 }
 project.display();
