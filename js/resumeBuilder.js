@@ -9,8 +9,10 @@ var contactInfo = {
 };
 var skills = [
            "Java      : JavaSE, JavaFX, Swing, Jsoup, Junit",
-           "Web       : HTML, CSS, Bootstrap, Javascript, jQuery, Python(Flask), Node.js(Express.js), PHP",
+           "Web       : HTML, CSS, Bootstrap, Javascript, jQuery, Python(Flask), Node.js, PHP",
+           "Framework : FLASK, Express.js",
            "Data      : SQL, MySQL, SQL Server, Oracle, Mongodb, ORM",
+           "API       : JSON, XML, Restful",
            "Knowledge : Data Structures, OOP Concepts, Computer Networks",
 
 ]
