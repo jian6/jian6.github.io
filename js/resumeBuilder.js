@@ -8,11 +8,10 @@ var contactInfo = {
   "location": "Ottawa, Ontario, Canada"
 };
 var skills = [
-           "Experience with Java, including Java SE, JavaFX, Swing, Jsoup",
-           "Experience with client side programming in HTML, CSS and Javascript",
-           "Experience with server side programming in Python, PHP and Node.js",
-           "Experience with software engineering practices, such as data structures and design patterns",
-           "Experience with testing methods, such as unit testing, blackbox testing etc.",
+           "Java      : JavaSE, JavaFX, Swing, Jsoup, Junit",
+           "Web       : HTML, CSS, Bootstrap, Javascript, jQuery, Python(Flask), Node.js(Express.js), PHP",
+           "Data      : SQL, MySQL, SQL Server, Oracle, Mongodb, ORM",
+           "Knowledge : Data Structures, OOP Concepts, Computer Networks",
 
 ]
 
@@ -31,7 +30,7 @@ var work = {
   "jobs":
   [
     {"position": "Web Developer",
-    "employer": "IBZ China (Chengdu)",
+    "employer": "IBZ Chengdu",
     "years": "Aug, 2014 - Jan, 2015",
     "location": "Work in Distance",
     "description": "IBZ is the official language training center of the University of Duisburg-Essen.<br>I participated in the "+
@@ -39,7 +38,7 @@ var work = {
                   "in charge of updating and maintaining the contents of the website."
     },
     {"position": "Software Developer",
-    "employer": "IBZ China (Chengdu)",
+    "employer": "IBZ Chengdu",
     "years": "Jun, 2014",
     "location": "Chengdu, China",
     "description": "Developed a courier-tracking system for the school’s administration, using node.js, express.js and mongodb.<br>"+
@@ -122,13 +121,13 @@ var project = {
 var formattedName = HTMLheaderName.replace ("%data%", bio.name);
 var formattedRole = HTMLheaderRole.replace ("%data%", bio.role);
 var fromattedPic = HTMLbioPic.replace ("%data%", bio.picture);
-var fromattedWelMsg = HTMLwelcomeMsg.replace ("%data%", bio.welcomeMsg);
+//var fromattedWelMsg = HTMLwelcomeMsg.replace ("%data%", bio.welcomeMsg);
 
 //header
 $("#header").prepend(formattedRole);
 $("#header").prepend(formattedName);
 $("#header").append(fromattedPic);
-$("#header").append(fromattedWelMsg);
+//$("#header").append(fromattedWelMsg);
 $("#header").append(HTMLskillsStart);
 for (item in skills){
   var formmatedSkill = HTMLskills.replace("%data%", skills[item]);
