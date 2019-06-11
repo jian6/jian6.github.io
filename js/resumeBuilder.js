@@ -2,8 +2,8 @@
 This is empty on purpose! Your code to build the resume will go here.
  */
 var contactInfo = {
-  "email": "liujian81@gmail.com",
-  "phone": "613-263-8768",
+  "email": "",
+  "phone": "",
   "github": '<a id ="link" href="https://github.com/jian6">jian6</a>',
   "location": "Ottawa, Ontario, Canada"
 };
