@@ -95,7 +95,7 @@ var education = {
     {"school": "Algonquin College",
     "degree": "Diploma",
     "major": "Computer Programmer, CO-OP",
-    "years": "Sep. 2015 - Present",
+    "years": "Sep. 2015 - Apr. 2016",
     "url": "http://www.algonquincollege.ca",
     "location": "Ottawa, Ontario, Canada"
     },
@@ -105,6 +105,13 @@ var education = {
     "years": "Sep. 2012 - May 2015",
     "url": "http://www.concordia.ca",
     "location": "Montreal, Quebec, Canada"
+    },
+    {"school": "University of New Brunswick",
+    "degree": "Bachelor of Business Administration",
+    "major": ["E-Commerce"],
+    "years": "Sep. 2002 - May 2007",
+    "url": "http://www.unb.ca",
+    "location": "Saint John, New Brunswick, Canada"
     }
   ]
 };
