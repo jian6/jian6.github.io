@@ -31,6 +31,25 @@ var bio = {
 var work = {
   "jobs":
   [
+    {"position": "I&V Engineer in Test Automation Developement",
+    "employer": "Nokia",
+    "years": "Sep, 2017 - Present",
+    "location": "Ottawa, Ontario, Canada",
+    "description": "Developing test automation framework for Nokia’s Netguard products using Java EE, Spring boot and Cucumber "+
+                  "<br>Investigating and fixing the bug for existing test automation steps  " +
+                  "<br>Designing and implementing new cucumber steps which will be used by testers " +
+                  "<br>Testing Nokia’s Netguard products "
+    },
+    {"position": "Web Application Developer",
+    "employer": "Nokia",
+    "years": "May, 2016 - Aug, 2017",
+    "location": "Ottawa, Ontario, Canada",
+    "description": "Developed and improved features for Nokia’s Product Support Portal (PSP) using Java EE, Spring, Javascript, and Solr "+
+                  "<br>Investigated and fixed bugs from frontend error to complex queries in Oracle database " +
+                  "<br>Created new reports for PSP usage statistics by using Jasper Report " +
+                  "<br>Developed a tool that generates PSP monthly usage data automatically using Python " +
+                  "<br>Performed functional testing for PSP using Selenium IDE and Java WebDriver "
+    },
     {"position": "Web Developer",
     "employer": "IBZ Chengdu",
     "years": "Aug, 2014 - Jan, 2015",
